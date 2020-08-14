@@ -20,14 +20,15 @@ const withData = (View) => {
       this.update();
     }
 
-    update() {
-      this.setState({
-        loading: true,
-        error: false,
-      });
+    onItemsUpdate(str) {
+      const idRegExp = /([0-9]*)$/;
+      const id = str.match(idRegExp)[1];
+      this.update(id);
+    }
 
+    update(id = 1) {
       this.props
-        .getData()
+        .getData(id)
         .then((data) => {
           this.setState({
             data,
@@ -53,7 +54,13 @@ const withData = (View) => {
         return <ErrorIndicator />;
       }
 
-      return <View {...this.props} data={data} />;
+      return (
+        <View
+          {...this.props}
+          data={data}
+          onItemsUpdate={this.onItemsUpdate.bind(this)}
+        />
+      );
     }
   };
 };
