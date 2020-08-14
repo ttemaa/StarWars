@@ -1,3 +1,9 @@
+
+Пример реакт [SPA.] (https://react-starwars-df9a2.web.app/).
+https://react-starwars-df9a2.web.app/
+
+Источкник данных API: https://swapi.dev/api
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
