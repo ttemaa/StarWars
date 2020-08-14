@@ -1,7 +1,7 @@
 
 Пример реакт [SPA](https://react-starwars-df9a2.web.app/).
 
-https://react-starwars-df9a2.web.app/
+Ссылка демо онлайн: https://react-starwars-df9a2.web.app/
 
 Источкник данных API: https://swapi.dev/api
 
